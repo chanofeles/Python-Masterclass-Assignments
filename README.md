@@ -7,3 +7,11 @@ As part of the development roadmap there would be a bunch of features that I wou
 - Implementation for Linux and other OS,  since the main development would be done in Windows. 
 - Creation of custom Bookmarks. 
 - Customization for specific projects, adding icons and images that represent an specific project, just to give it a bit of flavor.
+
+
+## Alt. option ##
+**Comp assistant** is a tool tha aims to help the artist to keep track of things to do and organize a bit better their workflow to ease the task of taking a shot from slapcomp to final. Tackling one task at a time is the best recipe to success and that is what this tool is thought for. 
+It consists in a UI where the artist can enter and categorize notes in personal or supervisor notes so they can plan ahead and have a better overview of the task ahead. 
+
+As part of the development roadmap there would be a bunch of features that I would like to add like:
+- communication to platforms like SG or FTRACK to have quick access to supervisor notes. 
