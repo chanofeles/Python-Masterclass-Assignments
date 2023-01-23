@@ -20,7 +20,7 @@ As part of the development roadmap there would be a bunch of features that I wou
 ## ALT OPTION 02 ##
 **Pomodoro productivity tool** Podomoro method for time management and productivity is a technique that is commonly used to help professionals overcome mental barriers and distractions while trying to focus on certain tasks. Artist will determine how long will the focus session last and work towards a previously defined goal. This could be a combination of the To Do list and this focus timer tool. 
 
-![MOCKUP2](01_tools\images\tool_02_mockup.png)
+![MOCKUP2](01_tools/images/tool_02_mockup.png)
 
 ## ALT OPTION 03 ##
 **Phoenix_nodeShare** is a tool that would allow artist to share nodes with the help of a simple interface. Artist will be able to set a shared folder where the tools will be stored and share/import said tools using the application interface. The word Phoenix comes from Rick & Morty's, Edge of Tomorty episode. (a bit of a nerdy name)
