@@ -1,6 +1,6 @@
 VERSION 1.0 
 
-![MOCKUP1](02_style/images/tool_001.png)
+![TOOL_1](02_style/images/tool_001.png)
 
 INTRODUCTION
 
@@ -21,19 +21,19 @@ USING THE TELEPORTER
 
 Follow the installation instructions and then go to the desired Nuke script and call it by pressing ALT + T and you will be prompted with a settings button.
 
-![MOCKUP1](02_style/images/tool_002.png)
+![TOOL_2](02_style/images/tool_002.png)
 
 After clicking the button you will have to select the area of you script that you want to connect it with along with entering it's name, then press OK.
 
-![MOCKUP1](02_style/images/tool_003.png)
+![TOOL_3](02_style/images/tool_003.png)
 
 You can repeat the previous step as many times as you want depending on how many areas of your script you want to bookmark.
 
-![MOCKUP1](02_style/images/tool_004.png)
+![TOOL_4](02_style/images/tool_004.png)
 
 Once the set up is done use the shortcut again to see the buttons you previously created appear over Nuke UI, then with a simple click, the node graph will teleport you to the designated area.
 
-![MOCKUP1](02_style/images/tool_005.png)
+![TOOL_5](02_style/images/tool_005.png)
 
 Enjoy it!
 
