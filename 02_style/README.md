@@ -1,6 +1,6 @@
 VERSION 1.0 
 
-![TOOL_1](02_style/images/tool_001.png)
+![TOOL_1](images/tool_001.png)
 
 INTRODUCTION
 
