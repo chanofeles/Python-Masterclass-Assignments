@@ -19,15 +19,16 @@ PROJECT FEATURES
 
 USING THE TELEPORTER
 
-Follow the installation instructions and then go to the desired Nuke script and call it by pressing ALT + T and you will be prompted with a settings button.
+Follow the installation instructions, then go to the Nuke script and trigger the Teleporter Tool by pressing ALT + T and you will be prompted with a settings button.
 
 ![TOOL_2](images/tool_002.png)
 
-After clicking the button you will have to select the area of you script that you want to connect it with along with entering it's name, then press OK.
+After clicking the button you will have to select the area of you script that you want to connect it with, along entering the section's name and pressing OK.
 
 ![TOOL_3](images/tool_003.png)
 
 You can repeat the previous step as many times as you want depending on how many areas of your script you want to bookmark.
+You can also use the (+) Button to add more teleport sections on your script.
 
 ![TOOL_4](images/tool_004.png)
 
