@@ -6,13 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-<<<<<<< Updated upstream
-    <width>395</width>
-    <height>134</height>
-=======
     <width>396</width>
     <height>140</height>
->>>>>>> Stashed changes
    </rect>
   </property>
   <property name="sizePolicy">
@@ -64,15 +59,11 @@ background-color:rgb(209, 225, 219)
     <rect>
      <x>0</x>
      <y>0</y>
-<<<<<<< Updated upstream
      <width>391</width>
-=======
-     <width>400</width>
->>>>>>> Stashed changes
      <height>131</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0">
     <property name="spacing">
      <number>0</number>
     </property>
@@ -167,6 +158,55 @@ background-color:rgb(209, 225, 219)
        <string>Create Bookmark</string>
       </property>
      </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="mainLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>17</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGetPosition">
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Bookmark</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnTeleport">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Teleport</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
      <widget class="Line" name="line">

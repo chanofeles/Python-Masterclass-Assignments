@@ -7,7 +7,7 @@ class Window(QMainWindow):
         super(Window, self).__init__()
 
         # Set the window properties
-        self.setWindowTitle("PySide 2 and Nuke 13 Window")
+        self.setWindowTitle("Teleporter Tool")
         self.setGeometry(100, 100, 300, 150)
 
         # Add a main widget
@@ -34,17 +34,20 @@ class Window(QMainWindow):
     def add_widget(self, layout):
         widget = Widget()
         widget.button.setText("Set Area")
-        widget.button.clicked.connect(widget.get_position)
+        widget.button.clicked.connect(widget.compute_position)
         widget.btnTeleport.setText("Teleport")
         widget.btnTeleport.clicked.connect(widget.set_position)
         layout.addWidget(widget)
 
     def print_text_input(self, text_input):
         print(text_input.text())
-   
+    
 
 
 class Widget(QWidget):
+    
+    position = None
+    
     def __init__(self):
         super(Widget, self).__init__()
 
@@ -61,44 +64,51 @@ class Widget(QWidget):
 
         self.btnTeleport = QPushButton()
         layout.addWidget(self.btnTeleport)
-    
-    def get_position(self):
+
+    def compute_position(self):
+        
         
         # Get selected nodes & store the names
         nodes = nuke.selectedNodes()
-        sel_nodes = [node['name'].value() for node in nodes]
-        
-        # Get the amount of nodes selected
-        amount = len( nodes )
 
-        # Average of all X and Y position values of the selected nodes
-        allX = sum( [ n.xpos()+n.screenWidth()/2 for n in nodes ] )
-        allY = sum( [ n.ypos()+n.screenHeight()/2 for n in nodes ] )
-        
-        # Stores de current zoom value of the DAG (Node graph)
-        zoom_value = nuke.zoom()
+        if not nodes:
+            nuke.message('seleccione nodos')
+        else: 
+            sel_nodes = [node['name'].value() for node in nodes]
+            
+            # Get the amount of nodes selected
+            amount = len( nodes )
 
-        # Center of selected nodes.
-        centreX = allX / amount
-        centreY = allY / amount
+            # Average of all X and Y position values of the selected nodes
+            allX = sum( [ n.xpos()+n.screenWidth()/2 for n in nodes ] )
+            allY = sum( [ n.ypos()+n.screenHeight()/2 for n in nodes ] )
+            
+            # Stores de current zoom value of the DAG (Node graph)
+            zoom_value = nuke.zoom()
 
-        # Stores de zoom / X / Y values of the nodes in a list
-        zoom_data = [zoom_value , 
-                     centreX , 
-                     centreY]
+            # Center of selected nodes.
+            centreX = allX / amount
+            centreY = allY / amount
 
-        return zoom_data
+            # Stores de zoom / X / Y values of the nodes in a list
+            zoom_data = [zoom_value , 
+                        centreX , 
+                        centreY]
 
-    # def set_position(self):
-    #     # Retrieves the stored DAG zoom and position data and override the current values.      
-    #     self.set_pos = nuke.zoom(*self.get_position())
-        
+            self.position = zoom_data
+            # print(zoom_data)
+            # return zoom_data
+    
     def set_position(self):
-         
 
-        # Retrieves the stored DAG zoom and position data and override the current values.
-        #set_pos = nuke.zoom(zoom_data[0], (zoom_data[1], zoom_data[2]))
-        print("funciono!!!")
+        # Retrieves the stored DAG zoom and position data and override the current values.      
+        #position = self.get_position()
+        #print(position)
+        nuke.zoom(self.position[0],(self.position[1],self.position[2]))
+        # print('will this work someday?')
+        
+    
+
 
 panel = Window()
 panel.show()

@@ -6,6 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< Updated upstream
     <width>400</width>
     <height>300</height>
    </rect>
@@ -27,10 +28,81 @@
      <widget class="QPushButton" name="pushButton_2">
       <property name="text">
        <string>PushButton</string>
+=======
+    <width>401</width>
+    <height>50</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+background-color: rgb(36, 43, 46);
+color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	background-color: rgb(209, 225, 219);
+	color: rgb(50, 52, 64);
+}
+
+QPushButton{background-color: rgb(89, 165, 198);
+border-radius:1
+}
+
+
+QPushButton:pressed{
+background-color: rgb(168, 162, 142);
+border-style:inset;
+}
+
+QLineEdit {
+background-color: rgb(168, 162, 142);
+}
+
+#line, #line_2 {
+background-color:rgb(209, 225, 219)
+}</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>1</number>
+    </property>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+>>>>>>> Stashed changes
       </property>
      </widget>
     </item>
     <item>
+<<<<<<< Updated upstream
      <widget class="QPushButton" name="pushButton">
       <property name="text">
        <string>PushButton</string>
@@ -43,10 +115,65 @@
        <string>PushButton</string>
       </property>
      </widget>
+=======
+     <layout class="QHBoxLayout" name="mainLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>17</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGetPosition">
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Bookmark</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnTeleport">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Teleport</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+>>>>>>> Stashed changes
     </item>
    </layout>
   </widget>
  </widget>
+<<<<<<< Updated upstream
  <resources/>
+=======
+ <resources>
+  <include location="teleporter_tool_icons.qrc"/>
+ </resources>
+>>>>>>> Stashed changes
  <connections/>
 </ui>
