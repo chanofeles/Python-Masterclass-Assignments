@@ -1,11 +1,31 @@
+#******************************************************************************
+# content         = Teleporter tool v02
+#
+# creation date   = 13/03/2023 
+#
+# description     = Overhaul of previous Teleporter tool version / new features.
+#
+# author          = Fernando Arbelaez <fernandoa@iknowvfx.com>
+# 
+#******************************************************************************
+
+
 import os
+import sys
 
 import nuke
 
 from PySide2.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton
 
+
+#*******************************************************************
+# VARIABLE
 IMAGE_PATH = r"E:\PythonMasterclass\assignments\ScriptTeleporterTool\ui\img\{}" + ".png"
 
+#*******************************************************************
+
+#*******************************************************************
+# CLASS
 class Window(QMainWindow):
     def __init__(self):
         super(Window, self).__init__()
@@ -20,13 +40,16 @@ class Window(QMainWindow):
         self.setWindowTitle("Teleporter Tool")
         self.setGeometry(100, 100, 300, 150)
 
+
         # Add a main widget
         main_widget = QWidget()
         self.setCentralWidget(main_widget)
+        main_widget.setMaximumWidth(400)
 
         # Add a layout to the main widget
         layout = QVBoxLayout()
         main_widget.setLayout(layout)
+        layout.setStretch(0,0)
 
         self.lblHeader = QLabel()
         self.lblHeader.setMaximumWidth(400)
@@ -146,8 +169,7 @@ class Widget(QWidget):
 
         self.text_input.setEnabled(True)
         
-    
-
-
+    #*******************************************************************
+# START
 panel = Window()
 panel.show()

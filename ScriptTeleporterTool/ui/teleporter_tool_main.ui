@@ -6,13 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-<<<<<<< Updated upstream
-    <width>395</width>
-    <height>134</height>
-=======
-    <width>396</width>
-    <height>140</height>
->>>>>>> Stashed changes
+    <width>402</width>
+    <height>136</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -64,11 +59,7 @@ background-color:rgb(209, 225, 219)
     <rect>
      <x>0</x>
      <y>0</y>
-<<<<<<< Updated upstream
      <width>391</width>
-=======
-     <width>400</width>
->>>>>>> Stashed changes
      <height>131</height>
     </rect>
    </property>

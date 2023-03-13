@@ -17,10 +17,7 @@ class MyWidget(QWidget):
          # Set up the layout
         self.verticalLayout = self.ui.verticalLayout       
         self.horizontalLayout = self.ui.mainLayout
-        self.btnGetPosition = self.ui.btnGetPosition
-        self.btnTeleport = self.ui.btnTeleport
-        self.lineEdit = self.ui.lineEdit
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        #self.verticalLayout.addLayout(self.horizontalLayout)
 
         # Connect the button
         self.ui.btnAdd.clicked.connect(self.add_widget)
@@ -28,13 +25,10 @@ class MyWidget(QWidget):
        
     
     def add_widget(self):
+        
+        newLayout = QVBoxLayout()
         widget = NewWidget()
-        verticalLayout = self.verticalLayout   
-        #self.verticalLayout = self.ui.verticalLayout  
-        #widget.btnGetposition.clicked.connect(widget.compute_position)
-        #widget.btnTeleport.setText("Teleport")
-        #widget.btnTeleport.clicked.connect(widget.set_position)
-        verticalLayout.addWidget(widget)
+        newLayout.addWidget(widget)
 
 class NewWidget(QWidget):
     def __init__(self):
@@ -50,9 +44,6 @@ class NewWidget(QWidget):
         
         layout = QHBoxLayout()
         self.setLayout(layout)
-        self.btnGetPosition = self.module_ui.btnGetPosition
-        self.btnTeleport = self.module_ui.btnTeleport
-        self.lineEdit = self.module_ui.lineEdit
         self.divider = self.module_ui.divider
 
     
@@ -67,7 +58,7 @@ class NewWidget(QWidget):
         self.btnTeleport = self.module_ui.btnTeleport
         layout.addWidget(self.btnTeleport)
 
-        #self.divider = self.m
+        
         
 
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>521</width>
-    <height>168</height>
+    <width>537</width>
+    <height>282</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -60,67 +60,122 @@ background-color:rgb(209, 225, 219)
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>51</height>
+     <height>127</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0">
     <property name="spacing">
      <number>0</number>
     </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
     <property name="topMargin">
-     <number>1</number>
+     <number>0</number>
     </property>
     <item>
-     <layout class="QHBoxLayout" name="mainLayout">
-      <property name="spacing">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="bottomMargin">
        <number>0</number>
       </property>
-      <property name="topMargin">
-       <number>17</number>
-      </property>
-      <property name="bottomMargin">
-       <number>9</number>
-      </property>
       <item>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QFrame" name="frame">
         <property name="maximumSize">
          <size>
-          <width>200</width>
+          <width>16777215</width>
           <height>20</height>
          </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btnGetPosition">
+       <widget class="QPushButton" name="btnHelp">
         <property name="maximumSize">
          <size>
-          <width>60</width>
+          <width>20</width>
           <height>20</height>
          </size>
         </property>
         <property name="text">
-         <string>Bookmark</string>
+         <string>?</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btnTeleport">
+       <widget class="QPushButton" name="btnWeb">
         <property name="maximumSize">
          <size>
-          <width>100</width>
+          <width>20</width>
           <height>20</height>
          </size>
         </property>
         <property name="text">
-         <string>Teleport</string>
+         <string>W</string>
         </property>
        </widget>
       </item>
      </layout>
     </item>
     <item>
+     <widget class="QLabel" name="lblHeader">
+      <property name="midLineWidth">
+       <number>5</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../teleporter_tool_icons.qrc">:/newPrefix/header.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnAdd">
+      <property name="maximumSize">
+       <size>
+        <width>398</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Create Bookmark</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="mainLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+     </layout>
+    </item>
+    <item>
      <widget class="Line" name="divider">
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -130,7 +185,7 @@ background-color:rgb(209, 225, 219)
   </widget>
  </widget>
  <resources>
-  <include location="teleporter_tool_icons.qrc"/>
+  <include location="../teleporter_tool_icons.qrc"/>
  </resources>
  <connections/>
 </ui>

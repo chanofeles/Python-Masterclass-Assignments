@@ -36,38 +36,24 @@ class MyWidget(QWidget):
         #widget.btnTeleport.clicked.connect(widget.set_position)
         verticalLayout.addWidget(widget)
 
-class NewWidget(QWidget):
+class NewWidget(MyWidget):
     def __init__(self):
-        super().__init__()
+        super(NewWidget, self).__init__()
 
-        # Load the UI file
-        from PySide2.QtUiTools import QUiLoader
-        TITLE = os.path.splitext(os.path.basename(__file__))[0]
-        path_module_ui = ("/").join([os.path.dirname(__file__),"teleporter_module.ui"])
-        #path_module_ui = r"E:\PythonMasterclass\assignments\ScriptTeleporterTool\ui\teleporter_module.ui"
-        loader = QUiLoader()
-        self.module_ui = loader.load(path_module_ui, self)
-        
+        # Add a layout to the widget
         layout = QHBoxLayout()
         self.setLayout(layout)
-        self.btnGetPosition = self.module_ui.btnGetPosition
-        self.btnTeleport = self.module_ui.btnTeleport
-        self.lineEdit = self.module_ui.lineEdit
-        self.divider = self.module_ui.divider
 
-    
         # Add a button and text input to the layout
         
-        self.lineEdit = self.module_ui.lineEdit
-        layout.addWidget(self.lineEdit)
+        line_edit = self.lineEdit
+        layout.addWidget(line_edit)
         
-        self.btnGetposition = self.module_ui.btnGetPosition
-        layout.addWidget(self.btnGetposition)
+        btnGetposition = self.btnGetPosition
+        layout.addWidget(btnGetposition)
         
-        self.btnTeleport = self.module_ui.btnTeleport
-        layout.addWidget(self.btnTeleport)
-
-        #self.divider = self.m
+        btnTeleport = self.btnTeleport
+        layout.addWidget(btnTeleport)
         
 
 
