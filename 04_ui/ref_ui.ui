@@ -36,11 +36,11 @@ border-style:inset;
 
 </string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,2,2">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,2,0">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnPicker">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -73,21 +73,24 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="dropMenu01">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 107, 107);</string>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="dropMenu02">
        <property name="styleSheet">
         <string notr="true">background-color: rgb(107, 107, 107);</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="comboBox_2">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(107, 107, 107);</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="btnRefresh">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -107,7 +110,7 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="btnImport">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -127,7 +130,7 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="btnSave">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -160,7 +163,7 @@ border-style:inset;
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QPushButton" name="btnConsole">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -180,7 +183,7 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="btnClear">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -200,7 +203,7 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="btnReturn">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -220,7 +223,7 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="btnSearch">
        <property name="maximumSize">
         <size>
          <width>24</width>
@@ -240,7 +243,7 @@ border-style:inset;
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="comboBox_3">
+      <widget class="QComboBox" name="dropMenu03">
        <property name="maximumSize">
         <size>
          <width>35</width>
@@ -300,15 +303,13 @@ border-style:inset;
     </widget>
    </item>
    <item>
-    <widget class="QLineEdit" name="lineEdit">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>250</height>
-      </size>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    <widget class="QTextEdit" name="txtInput">
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This is a placeholder message to test the color picker, this is just a knock off of the real KnobScripter Tool By Adrian Pueyo.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </item>
